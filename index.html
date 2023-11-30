@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-ca">
   <head>
-    <title>mui's corner !</title>
+    <title>muis corner about</title>
     <meta charset="utf-8">
     <!--font import-->
     <link rel="stylesheet" href="https://use.typekit.net/yourfontkitid.css">
 
-    <style>   
-      @media screen {
+    <style>
+      @media screen and (min-width: 600px){
         header {
           flex-direction: row;
           text-align: center;
         }
       }
+
       /* Code copied from: https://noonnu.cc/font_page/56
         Author: noonnu.cc
         Name: BMKIRANGHAERANG font
@@ -21,15 +22,16 @@
       */
       /* copied code starts */
       @font-face {
-      	font-family: "BMKIRANGHAERANG";
+        font-family: "BMKIRANGHAERANG";
         src: url("https://d1mphx2csg3pcg.cloudfront.net/fonts/BMKIRANGHAERANG-OTF.otf") format("opentype");
-      	font-weight: normal;
-      	font-style: normal;
+        font-weight: normal;
+        font-style: normal;
       }
+
       /*copied code ends*/
 
-      header {
-        color: white;
+      #header {
+        color: black;
         background-color: #e1d6ea;
         font-family: "Nanum Pen Script";
         font-weight: lighter;
@@ -41,77 +43,280 @@
         align-items: center;
       }
 
-      header img {
+     #header img {
         margin-left: 10px;
         margin-right: 20px;
-        width: 80px;      
+        width: 80px;
       }
 
-      #subpages {
+      #subpages ul {
+        margin-top: 0;
+        background-color: #fff2e2;
         position: relative;
         display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
         align-items: center;
+        padding: 0;
       }
 
-      .subpages {
+      #subpages li {
         margin-top: 70px;
-        margin-left: 12%;
+      	margin-right: 10%;
         text-align: center;
       }
 
-      .subpages img {
-        width: 130%;
-        max-width: 100%;
+      #subpages img {
+        width: 100%;
+        margin-right: 50px;
+        margin-left: 35%;
+      }
+
+      #create {
+        margin-left: 12%;
+        text-align: center;
+        position: relative;
+        z-index: 0;
+        margin: 70px 50px 0 50px;
+      }
+
+      #create img {
+        width: 100%;
+      }
+			
+      #blockA {
+        background-color: #d2cce2;
+      	border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        z-index: -1;
+        margin-right: 60px;
       }
       
-      .subpages p {
-        margin-top: -100px;
-        font-family: "BMKIRANGHAERANG";
-        color: white;
+    	.bgpic {
+        position: relative;
+        background-color: white;
+        margin-top: 100px;
+      }
+      
+      .bgpic img {
+        width: 100%;
+        height: auto;
+        z-index: -1;
+      }
+
+       .pricesandquotes {
+        position: absolute;
+        color: black;
+        font-family: "Nanum Pen Script";
+        font-size: 5vw;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        white-space: nowrap;
+        z-index: 2;
+      }
+
+      .servicenames {
+        position: absolute;
+        color: black;
+        font-family: "Avenir";
+        font-size: 2vw; 
+        top: 17%;
+        left: 17%;
+        margin-left: 2vw; 
+        white-space: nowrap;
+        z-index: 2;
+        line-height: 4vw;
+      }
+
+      .prices {
+        position: absolute;
+        color: black;
+        font-family: "Avenir";
+        font-size: 2vw; 
+        top: 17%;
+        margin-right: 20%;
+        right: 2vw;
+        white-space: nowrap;
+        z-index: 2;
+        line-height: 4vw; 
+      }
+
+      .additionalcharges {
+        font-style: italic;
+        position: absolute;
+        color: black;
+        font-family: "Avenir";
+        font-size: 2vw; 
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: left;
+        white-space: nowrap;
+        z-index: 2;
+        line-height: 4vw;
+      }
+
+       #footer {
+        background-color: #fcfcfc;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; 
+        box-sizing: border-box;
+      }
+
+      #footer img {
+        width: 55px;
+        height: 50px;
+        margin-top: 50px;
+      }
+
+      #footer h1 {
+        color: black;
+        font-size: 5vw;
+        font-family: "Nanum Pen Script";
+        margin-top: 1.5vh;
+        margin-left: 1vw;
+      }
+
+      #footer p span {
+        color: black;
+        font-size: 3vw;
+        font-family: "Big Caslon Medium";
+        white-space: nowrap;
+        text-align: center;
+        word-spacing: 2vw;
+        margin-right: 3vw;
+      }
+
+      #footer p {
+        line-height: 2;
+      }
+
+      #footer p .about {
+        word-spacing: 0.1em;
+      }
+
+      #footer p .terms {
+        word-spacing: 0.1em;
+      }
+
+      #footer p .privacy {
+        margin-left: 25%;
+      }
+
+      #footer p1 span {
+        color: black;
+        font-size: 3vw; /* Adjusted font size to match the footer */
+        font-family: "Avenir";
+        white-space: nowrap;
+        flex-direction: row;
+        z-index: 2;
+        margin-right: 1vw;
+        align-items: center;
+      }
+
+      #subcontainer {
+        background-color: #b2a8c6;
+        border-radius: 30px;
+        width: 60vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center horizontally */
+        position: relative;
+        margin-top: 1.5vh;
+        z-index: 1;
+      }
+
+      #footer p1 {
+        display: flex;
+        position: relative;
+        align-items: center;
+        z-index: 2; /* Ensure the text is on top of the container */
+      }
+
+      #footer p1 .subscribe {
+        margin-left: 50px;
+      }
+
+      #footer p2 .copyright {
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-top: 80px;
       }
       
       body {
-        color: white;
-        background-color: #fff2e2;
+        color: black;
+        background-color: #fff2e2; 
         background-position: center;
         font-family: "BMKIRANGHAERANG", Georgia, Times, serif;
-        line-height: 1.4em;
-        margin: 0px;
+        margin: 0;
       }
+      
     </style>
   </head>
-  
+
   <body>
-    <header>
+    <div id="header">
       <img src="logo.png" alt="small logo">
       <h1>mui's corner</h1>
-    </header>
-  
+    </div>
+
+    </div>
     <div id="subpages">
-      <div class="subpages">
+      <ul class="subpages">
+        <li>
         <a href="about.html">
           <img src="abt artist.png" alt="about">
-          <p>About the Artist</p>
         </a>
-      </div>
-      <div class="subpages">
+      </li>
+      <li>
         <a href="gallary.html">
           <img src="gallary 2.png" alt="gallary">
-          <p>Gallary</p>
         </a>
-      </div>
-      <div class="subpages">
+      </li>
+      <li>
         <a href="connect.html">
           <img src="connect w me.png" alt="connect">
-          <p>Connect With Me!</p>
         </a>
-      </div>
-      <div class="subpages">
+      </li>
+      <li>
         <a href="Book.html">
           <img src="booking.png" alt="book">
-          <p>Book An Appointment!</p>
         </a>
+      </li>
+    </ul>
+  </div>
+    
+    <div id="footer">
+      <img src="logo.png" alt="footer logo">
+    	<h1>muis corner</h1>
+      <p>
+        <span class="home">Home</span> 
+        <span class="about">About Us</span> 
+        <span class="services">Services</span>
+       	<span class="connect">Connect</span> 
+        <span class="booking">Booking<br></span>
+        <span class="privacy">Privacy</span>
+        <span class="terms">Terms & Policy</span>
+      </p>
+      <div id="subcontainer">
+      <p1>
+      	<span class="enter">Enter Your Email</span>
+        <span class="subscribe">Subscribe!</span>
+      </p1>
       </div>
-    </div>    
+      <p2> 
+        <span class="copyright"> &copy; 2023 mui's corner.  All Rights Reserved</p2>
+  </div>
   </body>
 </html>
