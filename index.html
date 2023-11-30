@@ -3,7 +3,9 @@
   <head>
     <title>muis corner about</title>
     <meta charset="utf-8">
+    
     <!--font import-->
+    <link href='https://fonts.googleapis.com/css?family=Nanum Pen Script' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.typekit.net/yourfontkitid.css">
 
     <style>
@@ -20,6 +22,7 @@
         Description: loads in BMKIRANGHAERANG font
         Date retrieved: Nov. 27, 2023
       */
+      
       /* copied code starts */
       @font-face {
         font-family: "BMKIRANGHAERANG";
@@ -27,7 +30,6 @@
         font-weight: normal;
         font-style: normal;
       }
-
       /*copied code ends*/
 
       #header {
@@ -70,97 +72,50 @@
         width: 100%;
         margin-right: 50px;
         margin-left: 35%;
+        margin-bottom: 5%;
+        margin-top: 50px;
       }
 
-      #create {
-        margin-left: 12%;
-        text-align: center;
-        position: relative;
-        z-index: 0;
-        margin: 70px 50px 0 50px;
-      }
+  #blockA {
+  background-color: #d2cce2;
+  border-radius: 30px;
+  width: calc(100% - 100px);
+  height: 55vw;
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+  margin: 50px;
+  margin-bottom: 50px;
+}
 
-      #create img {
-        width: 100%;
-      }
-			
-      #blockA {
-        background-color: #d2cce2;
-      	border-radius: 30px;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        text-align: center;
-        z-index: -1;
-        margin-right: 60px;
-      }
+#aboutpage p {
+  font-family: "Nanum Pen Script";
+  font-size: 4vw; /* Adjusted font size to make it responsive */
+  color: white;
+  position: absolute;
+  margin-top: 12%;
+  margin-left: 45%; /* Adjusted left position to control the horizontal placement */
+}
+
+#aboutpage p1 {
+  font-family: "Avenir";
+  font-size: 2vw; /* Adjusted font size to make it responsive */
+  color: white;
+  position: absolute;
+  margin-top: 17%; /* Adjusted top position to control the vertical placement */
+  margin-left: 5%;
+  margin-right: 10%; /* Adjusted margin to provide some space */
+}
+
+#makimage {
+  float: left;
+  width: 30vw;
+  margin-left: 70px; /* Adjusted left margin */
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
       
-    	.bgpic {
-        position: relative;
-        background-color: white;
-        margin-top: 100px;
-      }
-      
-      .bgpic img {
-        width: 100%;
-        height: auto;
-        z-index: -1;
-      }
-
-       .pricesandquotes {
-        position: absolute;
-        color: black;
-        font-family: "Nanum Pen Script";
-        font-size: 5vw;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        white-space: nowrap;
-        z-index: 2;
-      }
-
-      .servicenames {
-        position: absolute;
-        color: black;
-        font-family: "Avenir";
-        font-size: 2vw; 
-        top: 17%;
-        left: 17%;
-        margin-left: 2vw; 
-        white-space: nowrap;
-        z-index: 2;
-        line-height: 4vw;
-      }
-
-      .prices {
-        position: absolute;
-        color: black;
-        font-family: "Avenir";
-        font-size: 2vw; 
-        top: 17%;
-        margin-right: 20%;
-        right: 2vw;
-        white-space: nowrap;
-        z-index: 2;
-        line-height: 4vw; 
-      }
-
-      .additionalcharges {
-        font-style: italic;
-        position: absolute;
-        color: black;
-        font-family: "Avenir";
-        font-size: 2vw; 
-        top: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: left;
-        white-space: nowrap;
-        z-index: 2;
-        line-height: 4vw;
-      }
-
        #footer {
         background-color: #fcfcfc;
         width: 100%;
@@ -170,6 +125,7 @@
         align-items: center;
         padding: 20px; 
         box-sizing: border-box;
+        margin-top: 20vw;
       }
 
       #footer img {
@@ -297,6 +253,21 @@
     </ul>
   </div>
     
+  <div id="aboutpage">
+    <div id="blockA"></div>
+  <img src="hi im mak.png" alt="mak" id="makimage">
+    <p>
+      hey there, it's makenzie!
+    </p>
+    <p1>
+      A bit about myself- I am a self-taught nail tech who’s nail journey began in 2020.  I used to get my nails done monthly, but similarly to others, when the pandemic struck, I resorted to providing the service myself!
+      Doing my own nails has quickly became a form a therapy that I resort to when life gets overwhelming.  It’s allocated time where I get to put on my favourite playlist, sit down for a few hours and focus on creating art.  
+      The name of my business- mui’s corner, represents me as a brand.  In my family, I am the youngest, and mui translates to younger sister in Cantonese.  mui’s corner is a place where I am able to express myself freely 
+      through nail design, and I welcome you to relax, pull up a chair, and join me in my little corner :)
+    </p1>
+    
+  </div>
+  
     <div id="footer">
       <img src="logo.png" alt="footer logo">
     	<h1>muis corner</h1>
